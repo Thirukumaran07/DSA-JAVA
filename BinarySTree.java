@@ -46,7 +46,7 @@ class BinarySearchTree {
             if(root.right==null){
                 return root.right;
             }
-            int min = findMin(root.right)l;
+            int min = findMin(root.right);
             root.data = min;
             root.right = delete(root.right,min);
         }
